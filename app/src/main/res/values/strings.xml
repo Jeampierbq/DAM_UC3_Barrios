@@ -3,4 +3,7 @@
     <string name="checkBox_UsaMillas">Usa tus millas + dinero\n</string>
     <string name="checkBox_Usatusmillas">Usa tus millas + dinero</string>
     <string name="buttons_buscarvuelo">Buscar Vuelos\n</string>
+    <string name="buttons_vuelos">Vuelos</string>
+    <string name="Buttons_paquetes">Paquetes</string>
+    <string name="Buttons_hoteles">Hoteles</string>
 </resources>

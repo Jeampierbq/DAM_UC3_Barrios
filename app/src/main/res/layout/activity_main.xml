@@ -51,14 +51,14 @@
             android:id="@+id/edittext_origen"
             android:layout_width="289dp"
             android:layout_height="47dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="20dp"
             android:drawableStart="@drawable/salida_del_avion"
             android:ems="10"
-            android:inputType="text"
             android:hint="Origen"
+            android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/button5" />
 
         <EditText
             android:id="@+id/editText_destino"
@@ -67,8 +67,8 @@
             android:layout_marginTop="4dp"
             android:drawableStart="@drawable/aterrizaje"
             android:ems="10"
-            android:inputType="text"
             android:hint="Destino"
+            android:inputType="text"
             app:layout_constraintStart_toStartOf="@+id/edittext_origen"
             app:layout_constraintTop_toBottomOf="@+id/edittext_origen" />
 
@@ -79,8 +79,8 @@
             android:layout_marginTop="44dp"
             android:drawableStart="@drawable/dateone"
             android:ems="10"
-            android:inputType="date"
             android:hint="Ida"
+            android:inputType="date"
             app:layout_constraintStart_toStartOf="@+id/editText_destino"
             app:layout_constraintTop_toBottomOf="@+id/editText_destino" />
 
@@ -92,8 +92,8 @@
             android:layout_marginTop="44dp"
             android:drawableStart="@drawable/dateone"
             android:ems="10"
-            android:inputType="date"
             android:hint="Vuelta"
+            android:inputType="date"
             app:layout_constraintEnd_toEndOf="@+id/editText_destino"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/editText_ida"
@@ -107,8 +107,8 @@
             android:layout_marginTop="108dp"
             android:drawableStart="@drawable/asiento"
             android:ems="10"
-            android:inputType="text"
             android:hint="Economy"
+            android:inputType="text"
             app:layout_constraintStart_toStartOf="@+id/editText_ida"
             app:layout_constraintTop_toBottomOf="@+id/editText_destino" />
 
@@ -129,8 +129,8 @@
             android:layout_marginTop="20dp"
             android:drawableStart="@drawable/persona"
             android:ems="10"
-            android:inputType="text"
             android:hint="1Adulto"
+            android:inputType="text"
             app:layout_constraintStart_toStartOf="@+id/editText_economy"
             app:layout_constraintTop_toBottomOf="@+id/editText_economy" />
 
@@ -143,6 +143,43 @@
             android:text="@string/buttons_buscarvuelo"
             app:layout_constraintStart_toStartOf="@+id/checkBox2"
             app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="#082BF8"
+            android:text="@string/buttons_vuelos"
+            app:layout_constraintBottom_toBottomOf="@+id/button5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F2EC7"
+            android:text="@string/Buttons_paquetes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#082BF8"
+            android:text="@string/Buttons_hoteles"
+            app:layout_constraintBottom_toBottomOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintTop_toTopOf="@+id/button5"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
